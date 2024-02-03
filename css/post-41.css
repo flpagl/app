@@ -1,0 +1,69 @@
+.elementor-41 .elementor-element.elementor-element-34bb4740 {
+    text-align: center;
+}
+
+.elementor-41 .elementor-element.elementor-element-34bb4740 img {
+    width: 31%;
+}
+
+.elementor-41 .elementor-element.elementor-element-66216d67 {
+    padding: 100px 100px 100px 100px;
+}
+
+.elementor-41 .elementor-element.elementor-element-e9cca6e img {
+    width: 60%;
+}
+
+.elementor-41 .elementor-element.elementor-element-e9cca6e > .elementor-widget-container {
+    margin: 63px 0px 0px 0px;
+}
+
+body.elementor-page-41:not(.elementor-motion-effects-element-type-background), body.elementor-page-41 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+    background-color: #000000;
+    background-image: url("../images/Design-sem-nome-3.png");
+    background-position: -461px -20px;
+}
+
+@media(max-width: 1024px) {
+    .elementor-41 .elementor-element.elementor-element-e9cca6e img {
+        width:63%;
+    }
+
+    body.elementor-page-41:not(.elementor-motion-effects-element-type-background), body.elementor-page-41 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+        background-position: -595px 0px;
+    }
+}
+
+@media(max-width: 767px) {
+    .elementor-41 .elementor-element.elementor-element-28773e73 {
+        margin-top:0px;
+        margin-bottom: -18px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .elementor-41 .elementor-element.elementor-element-34bb4740 img {
+        width: 55%;
+    }
+
+    .elementor-41 .elementor-element.elementor-element-34bb4740 > .elementor-widget-container {
+        margin: 0px 0px 0px 0px;
+        padding: 20px 0px 0px 0px;
+    }
+
+    .elementor-41 .elementor-element.elementor-element-66216d67 {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .elementor-41 .elementor-element.elementor-element-e9cca6e img {
+        width: 91%;
+    }
+
+    .elementor-41 .elementor-element.elementor-element-e9cca6e > .elementor-widget-container {
+        margin: 0px 0px 0px 0px;
+    }
+
+    body.elementor-page-41:not(.elementor-motion-effects-element-type-background), body.elementor-page-41 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+        background-image: url("../images/Design-sem-nome-3.png");
+        background-position: -318px -13px;
+    }
+}
