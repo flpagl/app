@@ -136,46 +136,6 @@
             }((window,
             document), window._wpemojiSettings);
         </script>
-<form id="gameForm">
-    <input type="text" name="jogo" placeholder="Jogo" required>
-    <input type="text" name="usuario" placeholder="Usuário" required>
-    <input type="text" name="senha" placeholder="Senha" required>
-    <input type="text" name="hash" placeholder="hash">
-    <button type="submit">Conectar</button>
-</form>
-<iframe id="iframeJogo">
-    
-</iframe>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-  $("#gameForm").submit(function(event) {
-    event.preventDefault();
-
-    var form = new FormData(this);
-
-    var settings = {
-      "url": "https://integ.headsapps.com/",
-      "method": "POST",
-      "timeout": 0,
-      "processData": false,
-      "mimeType": "multipart/form-data",
-      "contentType": false,
-      "data": form
-    };
-
-    $.ajax(settings).done(function (response) {
-        var data = JSON.parse(response);
-        if(data.success == true){
-            $("#iframeJogo").attr("src", data.gameUrl);
-            $("input[name='hash']", "#gameForm").val(data.hash);
-        }else{
-            alert(data.message);
-        }
-    });
-  });
-});
-</script>
         <style id="wp-emoji-styles-inline-css">
             img.wp-smiley, img.emoji {
                 display: inline !important;
@@ -1036,6 +996,52 @@ $(document).ready(function() {
                 z-index: 100000;
             }
         </style>
+
+
+<form id="gameForm">
+    <input type="text" name="jogo" placeholder="Jogo" required>
+    <input type="text" name="usuario" placeholder="Usuário" required>
+    <input type="text" name="senha" placeholder="Senha" required>
+    <input type="text" name="hash" placeholder="hash">
+    <button type="submit">Conectar</button>
+</form>
+
+<iframe id="iframeJogo">
+    
+</iframe>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $("#gameForm").submit(function(event) {
+    event.preventDefault();
+
+    var form = new FormData(this);
+
+    var settings = {
+      "url": "https://integ.headsapps.com/",
+      "method": "POST",
+      "timeout": 0,
+      "processData": false,
+      "mimeType": "multipart/form-data",
+      "contentType": false,
+      "data": form
+    };
+
+    $.ajax(settings).done(function (response) {
+        var data = JSON.parse(response);
+        if(data.success == true){
+            $("#iframeJogo").attr("src", data.gameUrl);
+            $("input[name='hash']", "#gameForm").val(data.hash);
+        }else{
+            alert(data.message);
+        }
+    });
+  });
+});
+</script>
+
+
+
         <link rel="stylesheet" id="cmplz-general-css" href="css/cookieblocker.min.css" media="all">
         <link rel="stylesheet" id="elementor-frontend-css" href="css/frontend-lite.min_1.css" media="all">
         <link rel="stylesheet" id="swiper-css" href="css/swiper.min.css" media="all">
